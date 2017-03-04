@@ -4,7 +4,7 @@ This is a template for a reference environment using [Python](https://www.python
 ### How do I use it?
 
 ```
-$ git clone https://github.com/uomsystemsbiology/reference_environment_template.git
+$ git clone https://github.com/uomsystemsbiology/python_reference_environment_template.git
 $ cd reference_environment_template
 $ vagrant up
 ```
