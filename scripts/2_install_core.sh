@@ -7,8 +7,8 @@ log=/vagrant/temp/install.log
 echo Started install_core.sh | tee -a $log
 
 echo Installing packages | tee -a $log
-	#sudo apt-get -y update 
-	#sudo apt-get -y install octave evince
+	sudo apt-get -y update 
+	sudo apt-get -y install python3-numpy python3-scipy python3-matplotlib ipython3 ipython3-notebook python3-pandas python-sympy python3-nose
 echo Completed package installation | tee -a $log
 
 echo Getting code | tee -a $log
