@@ -12,6 +12,9 @@ echo Copying shell script to home directory | tee -a $log
 sudo cp /vagrant/temp/run_experiments.sh ~/run_experiments.sh
 sudo chmod 777 ~/run_experiments.sh
 
+echo Copying code into Desktop | tee -a $log
+sudo cp -r /vagrant/data/BGT-Biology ~/Desktop
+
 echo Linking the shell script into the root folder | tee -a $log
 sudo ln -sv ~/run_experiments.sh /run_experiments.sh
 

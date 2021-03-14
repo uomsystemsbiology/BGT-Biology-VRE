@@ -26,11 +26,13 @@ echo Installing packages | tee -a $log
 	export PATH="$PATH:/usr/src/julia-0.6.4/bin"
 	sudo echo 'export PATH="$PATH:/usr/src/julia-0.6.4/bin"' >> ~/.bashrc
 	# Install and configure BondGraphTools
-	python3.7 -m pip install BondGraphTools
-	python3.7 -m pip install --upgrade --force-reinstall numpy
+	yes | python3.7 -m pip install matplotlib==2.2.2 sympy==1.7.1 networkx==2.5 julia==0.1.5 diffeqpy==0.4
+	yes | python3.7 -m pip install BondGraphTools==0.3.9
+	yes | python3.7 -m pip install --upgrade --force-reinstall numpy==1.20.1
 	python3.7 -c "from BondGraphTools.config import config"
+	julia -e "using DifferentialEquations"
 	# Install Jupyter
-	python3.7 -m pip install notebook
+	yes | python3.7 -m pip install notebook
 echo Completed package installation | tee -a $log
 
 echo Completed install_core.sh | tee -a $log
