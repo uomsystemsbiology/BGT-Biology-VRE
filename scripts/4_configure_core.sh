@@ -14,6 +14,7 @@ sudo chmod 777 ~/run_experiments.sh
 
 echo Copying code into Desktop | tee -a $log
 sudo cp -r /vagrant/data/BGT-Biology ~/Desktop
+sudo chmod 777 ~/Desktop/BGT-Biology
 
 echo Linking the shell script into the root folder | tee -a $log
 sudo ln -sv ~/run_experiments.sh /run_experiments.sh
