@@ -1,0 +1,2 @@
+dvipng
+texlive-latex-extra
