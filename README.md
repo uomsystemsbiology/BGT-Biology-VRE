@@ -1,12 +1,21 @@
-### What is this? 
-This is a template for a reference environment using [Python](https://www.python.org).  It has a standard set of scripts to install packages, get code and set things up.  
+### Overview
+This is the reference environment for the manuscript "Analysing and simulating energy-based models in biology using BondGraphTools".  It executes code to reproduce specific results described in the manuscript.
 
-### How do I use it?
+To find other versions of this reference environment, see Other Links below.
+
+### Instructions for use
+This version of the reference environment is a virtual machine managed by [Vagrant](http://www.vagrantup.com).  To use it, install [Vagrant](http://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org/) and [Git](https://git-scm.com/downloads), then do:
 
 ```
-$ git clone https://github.com/uomsystemsbiology/python_reference_environment_template.git
-$ cd reference_environment_template
+$ git clone https://github.com/uomsystemsbiology/BGT-Biology-VRE.git
+$ cd BGT-Biology-VRE
 $ vagrant up
+$ vagrant reload
 ```
-This will build a virtual environment and run through each of the scripts with examples
-of use.  
+This will start a virtual machine with scripts to run which reproduce results described in the manuscript.  
+
+### Other links
+[Manuscript link (to be added)](http://manuscript-link.org)
+
+[Bootable ISO (to be added)](https://iso-link.org)
+
