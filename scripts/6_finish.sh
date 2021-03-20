@@ -3,7 +3,7 @@
 #completed and that the environment should be rebooted.  It may also
 #do some tidy-up of temp directories
 
-log=/vagrant/temp/install.log
+log=~/temp/install.log
 echo Started finish.sh | tee -a $log
 
 echo Completed finish.sh | tee -a $log

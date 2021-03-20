@@ -2,7 +2,7 @@
 #which have a desktop.  Configuration usually happens later in 
 #configure_desktop.sh unless something depends on it here.
 
-log=/vagrant/temp/install.log
+log=~/temp/install.log
 echo Started install_desktop.sh | tee -a $log
 
 echo Installing Arial font | tee -a $log

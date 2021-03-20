@@ -1,12 +1,22 @@
-#!/bin/sh
-
-#This is a sample shell script which executes a set of commands to run
-#some code and generate output.  All the executable commands are 
-#commented out.
+#!/bin/bash
 
 # Set up logfile
-log=/vagrant/temp/run_experiments.log
+log=~/temp/run_experiments.log
 
-# Change to project directory
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/sbl/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/sbl/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/sbl/miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/sbl/miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 cd ~/Desktop/BGT-Biology
-python3.7 -m jupyter notebook
+jupyter notebook
