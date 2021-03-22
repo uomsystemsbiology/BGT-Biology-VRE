@@ -17,6 +17,6 @@ This will start a virtual machine with scripts to run which reproduce results de
 ### Other links
 [Manuscript code](https://github.com/uomsystemsbiology/BGT-Biology)
 
-[VM image (to be added)](https://iso-link.org)
+[VM image](https://doi.org/10.5281/zenodo.4626922)
 
 [Manuscript link (to be added)](http://manuscript-link.org)
