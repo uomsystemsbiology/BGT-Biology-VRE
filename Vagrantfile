@@ -29,6 +29,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #Copying the contents of /data to a temporary directory on the environment
     config.vm.provision "shell", inline: "sudo rm -rf ~/temp;sudo mkdir ~/temp -p;chmod 777 ~/temp"
     config.vm.provision "file", source: "./data", destination: "~/temp"
+    config.vm.provision "shell", inline: "sudo rm -rf ~/scripts;sudo mkdir ~/scripts -p;chmod 777 ~/scripts"
+    config.vm.provision "file", source: "./scripts", destination: "~/scripts"
 
     #Provisioning the environment	
     config.vm.provision "shell", path: "scripts/1_init.sh", privileged: false
