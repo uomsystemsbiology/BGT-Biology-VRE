@@ -15,7 +15,8 @@ $ vagrant reload
 This will start a virtual machine with scripts to run which reproduce results described in the manuscript.  
 
 ### Other links
+[Manuscript code](https://github.com/uomsystemsbiology/BGT-Biology)
+
+[VM image (to be added)](https://iso-link.org)
+
 [Manuscript link (to be added)](http://manuscript-link.org)
-
-[Bootable ISO (to be added)](https://iso-link.org)
-
