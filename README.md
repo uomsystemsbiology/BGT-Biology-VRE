@@ -19,4 +19,4 @@ This will start a virtual machine with scripts to run which reproduce results de
 
 [VM image](https://doi.org/10.5281/zenodo.4626922)
 
-[Manuscript link (to be added)](http://manuscript-link.org)
+[Manuscript preprint](https://doi.org/10.1101/2021.03.24.436763)
