@@ -10,6 +10,7 @@ echo Installing packages | tee -a $log
 	sudo apt-get -y update
 	sudo apt-get -y install lxterminal
 	sudo apt-get -y install --no-install-recommends dvipng cm-super texlive-latex-extra 
+	sudo apt-get -y install --only-upgrade firefox
 	# Install Python
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 	bash ~/miniconda.sh -b -p $HOME/miniconda
